@@ -15,5 +15,8 @@ require 'pry'
   # }
   
 def remove_strawberry(contacts)
-
+  freddy = contacts["Freddy Mercury"]
+  flavors = freddy[:favorite_ice_cream_flavors]
+  flavors.shift
+  contacts
 end
